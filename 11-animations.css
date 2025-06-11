@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 768px; /* or 48 rem */
+    width:1598px;
+    background-color: red;
+    border: 5px solid black;
+    
+}
+.box{
+    height: 10%;
+    width: 20%;
+    background-color: blue;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 3s;
+animation-delay: 1s; /* start after how much time */
+animation-timing-function: linear; /*linear: move with same speed */
+animation-iteration-count: infinite; /* can keep 1 or 2 */
+animation-direction: alternate;/* alternate back n forth */
+}
+@keyframes rightMovement{
+    from{
+        top: 0px;
+        left: 0px;
+    }
+    to{
+        top: 0px;
+        left: 80%;
+    }
+}
+.box2{
+    height: 10%;
+    width: 20%;
+    background-color: blue;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    position: relative;
+    animation-name: leftMovement;
+    animation-duration: 3s;
+animation-delay: 1s; /* start after how much time */
+animation-timing-function: ease-in; /* like car first slow n then fast,opposite is ease out */
+animation-iteration-count: infinite; /* can set repeat to 1 or 2 */
+animation-direction: alternate-reverse;/* ulta shru */
+}
+@keyframes leftMovement{
+    from{
+        top: 80%;
+        left: 0px;
+    }
+    to{
+        top: 80%;
+        left: 80%;
+    }
+}
+.circle{
+    height: 10%;
+    width: 5%;
+    background-color: blue;
+    border: 2px solid yellow;
+    border-radius: 100%;
+    position: relative;
+    top:150px;
+    left: 750px;
+    
+    animation-name: roundMovement;
+    animation-duration: 12s;
+animation-delay: 1s; /* start after how much time */
+animation-timing-function: linear;
+animation-iteration-count: infinite; /* can keep 1 or 2 */
+ animation-direction: alternate; /* alternate back n forth */
+}
+@keyframes roundMovement{
+    0% /* when animation is 0 percent */{
+        top:150px;
+    left: 750px;
+    }
+    20%{
+        top:10%;
+        left: 95%;
+    }
+    40%{
+        top:-10%;
+        left: 50%;
+    }
+    60%{
+        top:30%;
+        left: 0%;
+    }
+    80%{
+        top:60%;
+        left: 50%;
+    }
+    100%{
+        left: 90%;
+        top: 30%;
+    }
+}

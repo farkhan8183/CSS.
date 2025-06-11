@@ -1,0 +1,16 @@
+.price{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+.st {
+    text-transform: capitalize;
+    text-indent: 50px; /* First-line indent */
+    letter-spacing: 10px; /* Adds space between letters */
+    line-height: 50px;
+}
+p.whites{
+/* white-space: pre; */
+white-space: nowrap;
+/* in case of nowrap, text will be written in a single plane without any next line,in pre,text will be written as its been written. */
+text-shadow: 2px 2px 2px black;    /* first is x axis shadow,second y  n then opacity */
+}

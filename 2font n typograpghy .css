@@ -1,0 +1,19 @@
+p{
+    font-family: 'Courier New', Courier, monospace; /* 1st is ' ' Bcs name has space 3 priorities,last one is family name if 2 doesnt work  */
+    font-style: italic;
+    font-weight: 900 ;
+    font-variant: small-caps;  /* capital letters */
+    font-size: 80px;
+    font-size: 5vw;  /* size of text decreases when we reduce the screen n increases when we expand it. use it according to size of font..
+     with 40 px fonnt size 2vw will be ok generally. */
+}
+
+
+/* The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used. */

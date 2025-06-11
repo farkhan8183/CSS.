@@ -1,0 +1,43 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    font-size: medium;
+    text-align:center;
+   /*  display: inline; */ /* to make in line */
+}
+.static{
+background-color: red;
+position: static;   /* keep postion normal (as it is) */
+}
+.relative{
+    background-color: blue;
+    position: relative;     /* move w.r.t itself */
+    top: 20px;  /* will give a gap of 20px form top */
+}
+.fixed{  /* moves with scroll */
+    background-color: brown;
+    position: fixed;    /*move w.r.t page  */
+    right: 20px     /*will give a gap of 20px from right of page */
+}
+.parent{
+    position: relative;     /* relative or fixed postiton is must in parent */
+    background-color: black;
+    opacity: 0.5;
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(16, 50, 145);
+    margin: auto;
+}
+.absolute{
+    background-color: yellow;
+    position: absolute; /* move w.r.t parent border */
+    top: 80px; /* give gap of 80px from top of border */
+    left: 100px;
+}
+.sticky{ /* moves with scroll when condition is met */
+    background-color: brown;
+    position: sticky; /* move w.r.t pagge */
+    top: 20px; /* will give 20px gap when its 20px distant from top of page */
+
+}
